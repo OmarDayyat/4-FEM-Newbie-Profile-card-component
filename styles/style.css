@@ -9,37 +9,125 @@
   margin: 0;
 }
 
-html, body {
-  position: relative;
+body {
   height: 100vh;
   font-size: 18px;
   background-color: #19a2ae;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-size: 60%;
+  background-position: left -15vw top -30vw,right -15vw bottom -30vw;
+  background-repeat: no-repeat;
 }
 
-.img-top {
-  background-image: url("../images/bg-pattern-top.svg");
-  background-size: cover;
+/*===============
+  Card Container
+=================*/
+.card-container {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/*==================
+  Card Top Container
+====================*/
+.card-top-container {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.card-top-container .image-pattern {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-top-container .user-img {
   position: absolute;
-  width: 500px;
-  height: 500px;
-  overflow: hidden;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: -5%;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  border-radius: 100px;
+  border: 10px solid white;
+}
+
+/*==================
+  Card Info Container
+====================*/
+.card-info {
+  text-align: center;
+}
+
+.card-info h3 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+
+.card-info h3 span {
+  font-weight: 400;
+  margin-left: 10px;
+  color: #969696;
+}
+
+.card-info p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #969696;
+  margin-bottom: 30px;
+  font-size: 0.98rem;
+}
+
+/*==================
+  Card Stats Container
+====================*/
+.card-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card-stats h3 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+
+.card-stats h3 span {
+  margin-top: 5px;
+  display: block;
+  font-size: 0.7rem;
+  color: #969696;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 /*============
   Attribution
 ==============*/
 .attribution {
+  position: absolute;
+  width: auto;
+  bottom: 0;
   font-size: 11px;
   text-align: center;
 }
