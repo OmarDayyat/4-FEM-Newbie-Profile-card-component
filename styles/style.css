@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/*============
+  General
+==============*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  position: relative;
+  height: 100vh;
+  font-size: 18px;
+  background-color: #19a2ae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-top {
+  background-image: url("../images/bg-pattern-top.svg");
+  background-size: cover;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
+
+/*============
+  Attribution
+==============*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
